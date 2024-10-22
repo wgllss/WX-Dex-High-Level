@@ -1,4 +1,4 @@
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/e3151e71ce8a4a068a7cce56874395af~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=N%2FgxVzWdimDVYSEAiLhKxiRHmIY%3D)
+![image.png](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/q.jpg)
 
 > 本文之天下剑学，一学即通，助你突破剑学上限，自生天剑护墙气体！
 
@@ -18,7 +18,7 @@
 
 ### 3. 有哪些可以执行方案，如果首页就用到，在第一次启动中哪种方案速度最快？
 
-![jjjj2223.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/cf3a4985b3b84e7a9a8fd27f41c58230~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=drzCdtIdjSvdxb1I3Yt3TNpCWSY%3D)
+![jjjj2223.png](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/jjjj2223.png)
 
 本文实例工程将采用 **`性能优化到极致`** 的天剑境界方案进行介绍：\
 同时输出对比 **`耗时表格 以此来证明`**
