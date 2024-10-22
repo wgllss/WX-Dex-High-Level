@@ -40,12 +40,12 @@
 ## 二、示例项目介绍研究
 
 1.  准备好示例需求json数据：我们假设数据为省市区数据如下：
-    ![d60834cf-6f1d-4352-a520-b9b3ee60b6d3.jpeg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/e9e4917614ef4d8cb4c4c40252f03362~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=auBMeB45F%2BlGD3U7n9XXAFjOuRw%3D)
+    ![q75.webp](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/q75.webp)
 2.  为了数据量做到极致小，我们处理成如下格式数据：\
-    ![img\_v3\_02ft\_a3998249-86c7-45f9-917b-ebbc607a92fg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/a8c1e4c16bdb45518e2c4d9dccb5e739~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=6YGmDLvaIzon%2Bs0Cw22SOvbA%2FAY%3D)
+    ![2222222.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/2222222.jpg)
 3.  我们在处理成一份 **`protobuf`** 数据来方便对比，这个没法截图看了
 4.  我们建好项目工程如下图：\
-    ![img\_v3\_02ft\_dc7f9113-b760-4e37-a8fd-70256466bacg.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/1ba2cc4fc15e44ffa4a408c88b12bcbf~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=1VT0%2Bvr1izkonZM%2FvspUSgVKBEw%3D)
+    ![1111.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/1111.jpg)
 5.  其中 **`WX-Dex-ICityModel`** 和 **`WX-Dex-ICityModel-PluginImpl`** 为lib工程
 6.  **`WX-Dex-ICityModel`** 下面只是一个接口如下：
 
@@ -82,22 +82,22 @@ class PluginCityModelImpl : ICityModel {
     处理后的json数据（`city_out.txt`）\
     处理后的Protobuf数据（`city_out_p`）\
     出来后的dex插件文件（`city_model_lib_dex`）
-    ![97bba472-58d7-4391-97b3-7657546d4c1a.jpeg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/e3386add273d4c10ad8ad49498aac272~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=Aw6JTgye%2F6GSFjjPiqSefnGaGIU%3D)
+    ![333.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/333.jpg)
     可以看出 Protobuf数据是最小的，原始数据最大，但实际相差其实并不是很大
 10. 示例工程app截图如下：\
-    ![img\_v3\_02ft\_93d0a460-d712-4f6c-8c1c-83e12ff6878g.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/218e057f66804252b436165a3bfc12cb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=dD%2BcTkAw0hSpLiOL4sk1cTXp6bQ%3D)
+    ![555.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/555.jpg)
 
 
 
 ## 三、研究分析
 1\.  使用FastKV + FastJson 输出结果:\
-![6f708041-592c-47fc-b93b-72d4f54ee22d.jpeg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/d78fc4573243402799784591cb474c42~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=%2F94ngutlpR%2F9B12Fx69AKH2wB7Q%3D)
+![6666.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/6666.jpg)
 2\.  使用FastKV + Protobuf 输出结果:\
-![8578de97-0415-4945-a2cc-d1db066cc5f5.jpeg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/5c12c5d5dcf74f3a8b253761a7a0453b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=FFLAdl%2BHRWU0ECcp91GxchhfniI%3D)
+![777.webp](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/777.webp)
 3\.  使用加载外部插件dex方案读取输出结果：\
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/ddbdcec075ba4ea9a0d6b7cbdd7e4daf~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=TW3pKs5uWHD6KkjchkDDkbcVGa8%3D)
+![888.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/888.jpg)
 4\.  测试15次尝试平均值比较结果：
-![img\_v3\_02ft\_1e26d166-7640-4e27-9d92-6f37953fb05g.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/695fde65fb484c64bc116f2081572aaa~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=rEODxQG5jGTfUd8Qxv38a7U8EI0%3D)
+![999.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/999.jpg)
 5\.  可以看到结果：\
 首次加载结果，由于FastKV 和 FastJson 和Protobuf 他们其实相对还是太慢了\
 dex加载数据集速度可以说是比他们
@@ -105,7 +105,7 @@ dex加载数据集速度可以说是比他们
 **`快10倍以上`**
 
 即便是他们都不是第一次加载结果，也不会比dex加载快：
-![cb4d236b-fb00-440e-a4d1-d1163110a56e.jpeg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/d7e26fc217ba4198968d167c0b7d7c7a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=njN%2F3dR3lroVkYxuLurFlkhyFK4%3D)
+![10.jpg](https://raw.githubusercontent.com/wgllss/WX-Dex-High-Level/master/pic/10.jpg)
 
 ## 四、插件化之策略模式方案
 
