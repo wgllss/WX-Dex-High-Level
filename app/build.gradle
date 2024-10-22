@@ -1,0 +1,75 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.compose.compiler)
+}
+
+android {
+    namespace = "com.wx.dex.high.level"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.wx.dex.high.level"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+//    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.constraintlayout.compose)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.compose.material3.adaptive.navigation)
+    implementation(libs.androidx.compose.material3.adaptive)
+    implementation(libs.androidx.compose.material3.adaptive.layout)
+    implementation(libs.androidx.compose.material3.navigationSuite)
+    implementation(libs.androidx.compose.material3.windowSizeClass)
+
+    implementation(libs.collapsing.toolbar.scaffold)
+    implementation libs.fastkv
+    implementation libs.packable.kotlin
+
+    implementation libs.androidx.activity.ktx
+    implementation libs.androidx.fragment.ktx
+
+    implementation libs.fastjson
+    implementation libs.protobuf
+
+    implementation project(":WX-Dex-ICityModel")
+
+}
