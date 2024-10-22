@@ -87,8 +87,7 @@ class PluginCityModelImpl : ICityModel {
 10. 示例工程app截图如下：\
     ![img\_v3\_02ft\_93d0a460-d712-4f6c-8c1c-83e12ff6878g.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/218e057f66804252b436165a3bfc12cb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgV2dsbHNz:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMzU2NjYxODM1MDgyNTczIn0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1730190859&x-orig-sign=dD%2BcTkAw0hSpLiOL4sk1cTXp6bQ%3D)
 
-**[项目地址 github](https://github.com/wgllss/WX-Dex-High-Level)**\
-**[项目地址 gitee](https://gitee.com/wgllss888/WX-Dex-High-Level)**
+
 
 ## 三、研究分析
 1\.  使用FastKV + FastJson 输出结果:\
